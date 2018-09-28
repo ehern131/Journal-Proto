@@ -25,10 +25,10 @@
         <th scope="col">LDW</th>
         <th scope="col">Tax Rate</th>
         <th scope="col">Tax</th>
-        <th scope="col">Initial Fee</th>
+        <th scope="col">Fees</th>
         <th scope="col">Amount</th>
         <th scope="col">Approval</th>
-        <th scope="col">Balance</th>
+        <th scope="col">Lease Balance</th>
         <th scope="col">SAC</th>
         <th scope="col">EPO</th>
         <th scope="col">Wallet In/Out</th>
@@ -41,23 +41,26 @@
         <th scope="col">Year</th>
         <th scope="col">SKU #</th>
         <th scope="col">Description</th>
-        <th scope="col">Lease Multiplier</th>
         <th scope="col">Cash Value</th>
+        <th scope="col">Lease Multiplier</th>
         <th scope="col">Lease Value</th>
         <th scope="col">Origin</th>
         <th scope="col">Employee Code</th>
         <th scope="col">Note</th>
       </tr>
     </thead>
+
+
+    <!-- LINE ITEM 1 -->
     <tbody>
       <tr class="clickable" data-toggle="collapse" data-target="#group-of-rows-1" aria-controls="group-of-rows-1">
         <th scope="row"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;1</th>
         <td>20180629 - 01:15:30</td>
         <td>Origination</td>
-        <td><img class="status" src="img/status--active.png" alt=""></td>
+        <td><img class="status" src="img/status--active2.png" alt=""></td>
         <td></td>
         <td>FL</td>
-        <td>$0.00</td>
+        <td></td>
         <td>0.10</td>
         <td></td>
         <td>0.07</td>
@@ -65,7 +68,7 @@
         <td>$40.00</td>
         <td class="amount"><strong>$40.00</strong></td>
         <td></td>
-        <td>$230.00</td>
+        <td>$517.50</td>
         <td>$230.00</td>
         <td></td>
         <td></td>
@@ -78,13 +81,13 @@
         <td></td>
         <td></td>
         <td></td>
-        <td>2.25</td>
+
         <td>$230.00</td>
+        <td>2.25</td>
         <td>$517.50</td>
         <td>ISPM</td>
         <td>543-532-654</td>
         <td></td>
-
       </tr>
     </tbody>
     <tbody id="group-of-rows-1" class="collapse">
@@ -93,7 +96,7 @@
         <td></td>
         <td></td>
         <td></td>
-        <td><img class="status" src="img/status--active.png" alt=""></td>
+        <td><img class="status" src="img/status--open.png" alt=""></td>
         <td></td>
         <td></td>
         <td></td>
@@ -110,63 +113,406 @@
         <td></td>
         <td></td>
         <td></td>
+        <td>Eames Arm Chair</td>
+        <td>Boulevard</td>
+        <td>Gray</td>
+        <td>2018</td>
+        <td>438274</td>
+        <td></td>
+        <td>$115.00</td>
         <td></td>
         <td></td>
         <td></td>
         <td></td>
         <td></td>
-        <td>1</td>
-        <td>1</td>
-        <td>1</td>
-        <td>1</td>
-        <td>1</td>
       </tr>
-  </tbody>
-  <tbody>
-    <tr class="clickable" data-toggle="collapse" data-target="#group-of-rows-2" aria-controls="group-of-rows-1">
-      <th scope="row"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;1</th>
-      <td>20180629 - 01:15:30</td>
-      <td>Initial Payment</td>
-      <td><img class="status" src="img/status--active.png" alt=""></td>
-      <td></td>
-      <td>FL</td>
-      <td>$0.00</td>
-      <td>0.10</td>
-      <td></td>
-      <td>0.07</td>
-      <td></td>
-      <td>$40.00</td>
-      <td class="amount-negative"><strong>-$40.00</strong></td>
-      <td></td>
-      <td>$230.00</td>
-      <td>$230.00</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>2</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>2.25</td>
-      <td>$230.00</td>
-      <td>$517.50</td>
-      <td>ISPM</td>
-      <td>543-532-654</td>
-      <td></td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
+      <tr id="lease-items">
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><img class="status" src="img/status--open.png" alt=""></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Eames Arm Chair</td>
+        <td>Boulevard</td>
+        <td>Gray</td>
+        <td>2018</td>
+        <td>438274</td>
+        <td></td>
+        <td>$115.00</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
 
-<!-- Optional JavaScript -->
-<script src="toggle-table-row.js"></script>
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- LINE ITEM 2 -->
+    <tbody>
+      <tr class="clickable" data-toggle="collapse" data-target="#group-of-rows-2" aria-controls="group-of-rows-2">
+        <th scope="row"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;1</th>
+        <td>20180629 - 01:15:30</td>
+        <td>Initial Payment</td>
+        <td><img class="status" src="img/status--active2.png" alt=""></td>
+        <td></td>
+        <td>FL</td>
+        <td></td>
+        <td>0.10</td>
+        <td></td>
+        <td>0.07</td>
+        <td></td>
+        <td>$40.00</td>
+        <td class="amount-negative"><strong>-$40.00</strong></td>
+        <td>APP *7354</td>
+        <td>$517.50</td>
+        <td>$230.00</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>$40.00</td>
+        <td>2</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>$230.00</td>
+        <td>2.25</td>
+        <td>$517.50</td>
+        <td>ISPM</td>
+        <td>543-532-654</td>
+        <td></td>
+      </tr>
+    </tbody>
+    <tbody id="group-of-rows-2" class="collapse">
+      <tr id="lease-items">
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><img class="status" src="img/status--open.png" alt=""></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Eames Arm Chair</td>
+        <td>Boulevard</td>
+        <td>Gray</td>
+        <td>2018</td>
+        <td>438274</td>
+        <td></td>
+        <td>$115.00</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="lease-items">
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><img class="status" src="img/status--open.png" alt=""></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Eames Arm Chair</td>
+        <td>Boulevard</td>
+        <td>Gray</td>
+        <td>2018</td>
+        <td>438274</td>
+        <td></td>
+        <td>$115.00</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+
+
+    <!-- LINE ITEM 3 -->
+    <tbody>
+      <tr class="clickable" data-toggle="collapse" data-target="#group-of-rows-3" aria-controls="group-of-rows-3">
+        <th scope="row"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;1</th>
+        <td>20180629 - 01:15:30</td>
+        <td>Payment Due (1)</td>
+        <td><img class="status" src="img/status--active2.png" alt=""></td>
+        <td></td>
+        <td>FL</td>
+        <td></td>
+        <td>0.10</td>
+        <td>$4.31</td>
+        <td>0.07</td>
+        <td>$3.02</td>
+        <td></td>
+        <td class="amount"><strong>$50.46</strong></td>
+        <td></td>
+        <td>$517.50</td>
+        <td>$230.00</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>2</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>$230.00</td>
+        <td>2.25</td>
+        <td>$517.50</td>
+        <td>ISPM</td>
+        <td>543-532-654</td>
+        <td></td>
+      </tr>
+    </tbody>
+    <tbody id="group-of-rows-3" class="collapse">
+      <tr id="lease-items">
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><img class="status" src="img/status--delivered.png" alt=""></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>$2.16</td>
+        <td></td>
+        <td>$1.51</td>
+        <td></td>
+        <td>$25.23</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Eames Arm Chair</td>
+        <td>Boulevard</td>
+        <td>Gray</td>
+        <td>2018</td>
+        <td>438274</td>
+        <td></td>
+        <td>$115.00</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="lease-items">
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><img class="status" src="img/status--delivered.png" alt=""></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>$2.16</td>
+        <td></td>
+        <td>$1.51</td>
+        <td></td>
+        <td>$25.23</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Eames Arm Chair</td>
+        <td>Boulevard</td>
+        <td>Gray</td>
+        <td>2018</td>
+        <td>438274</td>
+        <td></td>
+        <td>$115.00</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+
+    <!-- LINE ITEM 4 -->
+    <tbody>
+      <tr class="clickable" data-toggle="collapse" data-target="#group-of-rows-4" aria-controls="group-of-rows-4">
+        <th scope="row"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;1</th>
+        <td>20180629 - 01:15:30</td>
+        <td>Payment/Autopay (1)</td>
+        <td><img class="status" src="img/status--active2.png" alt=""></td>
+        <td></td>
+        <td>FL</td>
+        <td></td>
+        <td>0.10</td>
+        <td>$4.31</td>
+        <td>0.07</td>
+        <td>$3.02</td>
+        <td></td>
+        <td class="amount-negative"><strong>-$50.46</strong></td>
+        <td>APP *7354</td>
+        <td>$467.04</td>
+        <td>$179.54</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>$90.46</td>
+        <td>2</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+
+        <td>$230.00</td>
+        <td>2.25</td>
+        <td>$517.50</td>
+        <td>ISPM</td>
+        <td>543-532-654</td>
+        <td></td>
+      </tr>
+    </tbody>
+    <tbody id="group-of-rows-4" class="collapse">
+      <tr id="lease-items">
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><img class="status" src="img/status--delivered.png" alt=""></td>
+        <td></td>
+        <td></td>
+        <td>0.10</td>
+        <td>$11.50</td>
+        <td>0.07</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Eames Arm Chair</td>
+        <td>Boulevard</td>
+        <td>Gray</td>
+        <td>2018</td>
+        <td>438274</td>
+        <td></td>
+        <td>$115.00</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="lease-items">
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><img class="status" src="img/status--delivered.png" alt=""></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Eames Arm Chair</td>
+        <td>Boulevard</td>
+        <td>Gray</td>
+        <td>2018</td>
+        <td>438274</td>
+        <td></td>
+        <td>$115.00</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+
+
+
+
+
+
+
+
+  </table>
+
+  <!-- Optional JavaScript -->
+  <script src="toggle-table-row.js"></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
