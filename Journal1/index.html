@@ -14,12 +14,12 @@
   <table class="table">
     <thead class="thead-dark">
       <tr>
-        <th scope="col">#</th>
+        <th scope="col">#<i class="fa fa-sort ml-2" aria-hidden="true"></i></th>
         <th scope="col">Date/Time</th>
         <th scope="col">Event</th>
         <th scope="col">Lease Status</th>
         <th scope="col">Item Status</th>
-        <th scope="col">Delivery</th>
+        <th scope="col">Subtotal</th>
         <th scope="col">LDW M</th>
         <th scope="col">LDW</th>
         <th scope="col">Tax Rate</th>
@@ -27,6 +27,7 @@
         <th scope="col">Fees</th>
         <th scope="col">Amount</th>
         <th scope="col">Approval</th>
+        <th scope="col">Amount Due</th>
         <th scope="col">Lease Balance</th>
         <th scope="col">SAC</th>
         <th scope="col">EPO</th>
@@ -42,7 +43,7 @@
         <th scope="col">Description</th>
         <th scope="col">Cash Value</th>
         <th scope="col">Lease Multiplier</th>
-        <th scope="col">Lease Value</th>
+        <th scope="col">Lease Amount</th>
         <th scope="col">ST</th>
         <th scope="col">Origin</th>
         <th scope="col">Employee Code</th>
@@ -67,6 +68,7 @@
         <td>$40.00</td>
         <td class="amount"><strong>$40.00</strong></td>
         <td></td>
+        <td>$40.00</td>
         <td>$517.50</td>
         <td>$230.00</td>
         <td></td>
@@ -106,7 +108,7 @@
         <td></td>
         <td></td>
         <td></td>
-        <td></td>
+        <td>$179.00</td>
         <td></td>
         <td></td>
         <td></td>
@@ -118,7 +120,8 @@
         <td>2018</td>
         <td>438274</td>
         <td></td>
-        <td>$115.00</td>
+        <td>$179.00</td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -141,19 +144,20 @@
         <td></td>
         <td></td>
         <td></td>
+        <td>$51.00</td>
         <td></td>
         <td></td>
         <td></td>
         <td></td>
         <td></td>
-        <td></td>
-        <td>Eames Arm Chair</td>
-        <td>Boulevard</td>
-        <td>Gray</td>
+        <td>Ottoman</td>
+        <td>Teller</td>
+        <td>Blue</td>
         <td>2018</td>
-        <td>438274</td>
+        <td>759233</td>
         <td></td>
-        <td>$115.00</td>
+        <td>$51.00</td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -178,7 +182,24 @@
         <td></td>
         <td>$40.00</td>
         <td class="amount-negative"><strong>-$40.00</strong></td>
-        <td>APP *7354</td>
+        <td class="approval_details" data-toggle="modal" data-target="#exampleModal">*7354</td>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Processor Details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                {'gateway': 3, 'tax_amount': 0.0, 'response': {'AcsUrl': None, 'AuthAmount': 0.0, 'AuthCode': '033906', 'AvsResult': 'Address: Match & 5 Digit Zip: Match', 'AvsResultCode': 'Y', 'BatchNum': 67, 'BatchRefNum': 59370142, 'CardCodeResult': 'No CVV2/CVC data available for transaction.', 'CardCodeResultCode': None, 'CardLevelResult': None, 'CardLevelResultCode': None, 'ConversionRate': 0.0, 'ConvertedAmount': 0.0, 'ConvertedAmountCurrency': '0', 'CustNum': 76192681, 'Error': 'Approved', 'ErrorCode': 0, 'isDuplicate': False, 'Payload': None, 'ProfilerScore': None, 'ProfilerResponse': None, 'ProfilerReason': None, 'RefNum': 2089238478, 'RemainingBalance': None, 'Result': 'Approved', 'ResultCode': 'A', 'Status': 'Pending', 'StatusCode': 'P', 'VpasResultCode': None}, 'payment_method': None, 'payment_method_id': None, 'amount': '1064.46', 'operation': 'cc:sale', 'customer': 'Customer 27', 'customer_id': 27}
+              </div>
+            </div>
+          </div>
+        </div>
+        <td>$40.00</td>
         <td>$517.50</td>
         <td>$230.00</td>
         <td></td>
@@ -197,7 +218,7 @@
         <td>$517.50</td>
         <td>FL</td>
         <td>ISPM</td>
-        <td>543-532-654</td>
+        <td></td>
         <td></td>
       </tr>
     </tbody>
@@ -218,7 +239,7 @@
         <td></td>
         <td></td>
         <td></td>
-        <td></td>
+        <td>$179.00</td>
         <td></td>
         <td></td>
         <td></td>
@@ -230,7 +251,8 @@
         <td>2018</td>
         <td>438274</td>
         <td></td>
-        <td>$115.00</td>
+        <td>$179.00</td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -253,19 +275,20 @@
         <td></td>
         <td></td>
         <td></td>
+        <td>$51.00</td>
         <td></td>
         <td></td>
         <td></td>
         <td></td>
         <td></td>
-        <td></td>
-        <td>Eames Arm Chair</td>
-        <td>Boulevard</td>
-        <td>Gray</td>
+        <td>Ottoman</td>
+        <td>Teller</td>
+        <td>Blue</td>
         <td>2018</td>
-        <td>438274</td>
+        <td>759233</td>
         <td></td>
-        <td>$115.00</td>
+        <td>$51.00</td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -280,17 +303,18 @@
       <tr class="clickable" data-toggle="collapse" data-target="#group-of-rows-3" aria-controls="group-of-rows-3">
         <th scope="row"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;3</th>
         <td>20180629 - 01:15:30</td>
-        <td>Payment Due (1)</td>
+        <td>Payment Due (1 of 12)</td>
         <td><img class="status" src="img/status--active2.png" alt=""></td>
         <td></td>
-        <td></td>
+        <td>$43.12+</td>
         <td>0.10</td>
-        <td>$4.31</td>
+        <td>$4.31+</td>
         <td>0.07</td>
-        <td>$3.02</td>
+        <td>$3.02+</td>
         <td></td>
-        <td class="amount"><strong>$50.46</strong></td>
+        <td class="amount"><strong>$50.46=</strong></td>
         <td></td>
+        <td>$50.46</td>
         <td>$517.50</td>
         <td>$230.00</td>
         <td></td>
@@ -309,7 +333,7 @@
         <td>$517.50</td>
         <td>FL</td>
         <td>ISPM</td>
-        <td>543-532-654</td>
+        <td></td>
         <td></td>
       </tr>
     </tbody>
@@ -320,17 +344,17 @@
         <td></td>
         <td></td>
         <td><img class="status" src="img/status--delivered.png" alt=""></td>
+        <td>$33.56+</td>
+        <td></td>
+        <td>$3.36+</td>
+        <td></td>
+        <td>$2.35+</td>
+        <td></td>
+        <td>$39.27=</td>
         <td></td>
         <td></td>
-        <td>$2.16</td>
         <td></td>
-        <td>$1.51</td>
-        <td></td>
-        <td>$25.23</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>$179.00</td>
         <td></td>
         <td></td>
         <td></td>
@@ -342,7 +366,8 @@
         <td>2018</td>
         <td>438274</td>
         <td></td>
-        <td>$115.00</td>
+        <td>$179.00</td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -356,29 +381,30 @@
         <td></td>
         <td></td>
         <td><img class="status" src="img/status--delivered.png" alt=""></td>
+        <td>$9.56+</td>
         <td></td>
+        <td>$0.67+</td>
         <td></td>
-        <td>$2.16</td>
+        <td>$0.96+</td>
         <td></td>
-        <td>$1.51</td>
-        <td></td>
-        <td>$25.23</td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>$11.19=</td>
         <td></td>
         <td></td>
         <td></td>
+        <td>$51.00</td>
         <td></td>
         <td></td>
         <td></td>
-        <td>Eames Arm Chair</td>
-        <td>Boulevard</td>
-        <td>Gray</td>
+        <td></td>
+        <td></td>
+        <td>Ottoman</td>
+        <td>Teller</td>
+        <td>Blue</td>
         <td>2018</td>
-        <td>438274</td>
+        <td>759233</td>
         <td></td>
-        <td>$115.00</td>
+        <td>$51.00</td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -392,19 +418,36 @@
       <tr class="clickable" data-toggle="collapse" data-target="#group-of-rows-4" aria-controls="group-of-rows-4">
         <th scope="row"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;4</th>
         <td>20180629 - 01:15:30</td>
-        <td>Payment/Autopay (1)</td>
+        <td>Payment/Auto (1 of 12)</td>
         <td><img class="status" src="img/status--active2.png" alt=""></td>
         <td></td>
-        <td></td>
+        <td>$43.12+</td>
         <td>0.10</td>
         <td>$4.31</td>
         <td>0.07</td>
         <td>$3.02</td>
         <td></td>
         <td class="amount-negative"><strong>-$50.46</strong></td>
-        <td>APP *7354</td>
+        <td class="approval_details" data-toggle="modal" data-target="#exampleModal">*7354</td>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Processor Details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                {'gateway': 3, 'tax_amount': 0.0, 'response': {'AcsUrl': None, 'AuthAmount': 0.0, 'AuthCode': '033906', 'AvsResult': 'Address: Match & 5 Digit Zip: Match', 'AvsResultCode': 'Y', 'BatchNum': 67, 'BatchRefNum': 59370142, 'CardCodeResult': 'No CVV2/CVC data available for transaction.', 'CardCodeResultCode': None, 'CardLevelResult': None, 'CardLevelResultCode': None, 'ConversionRate': 0.0, 'ConvertedAmount': 0.0, 'ConvertedAmountCurrency': '0', 'CustNum': 76192681, 'Error': 'Approved', 'ErrorCode': 0, 'isDuplicate': False, 'Payload': None, 'ProfilerScore': None, 'ProfilerResponse': None, 'ProfilerReason': None, 'RefNum': 2089238478, 'RemainingBalance': None, 'Result': 'Approved', 'ResultCode': 'A', 'Status': 'Pending', 'StatusCode': 'P', 'VpasResultCode': None}, 'payment_method': None, 'payment_method_id': None, 'amount': '1064.46', 'operation': 'cc:sale', 'customer': 'Customer 27', 'customer_id': 27}
+              </div>
+            </div>
+          </div>
+        </div>
+        <td>$0.00</td>
         <td>$467.04</td>
-        <td>$179.54</td>
+        <td>$186.88</td>
         <td></td>
         <td></td>
         <td></td>
@@ -421,7 +464,7 @@
         <td>$517.50</td>
         <td>FL</td>
         <td>ISPM</td>
-        <td>543-532-654</td>
+        <td></td>
         <td></td>
       </tr>
     </tbody>
@@ -432,17 +475,17 @@
         <td></td>
         <td></td>
         <td><img class="status" src="img/status--delivered.png" alt=""></td>
+        <td>$33.56+</td>
+        <td></td>
+        <td>$3.36+</td>
+        <td></td>
+        <td>$2.35+</td>
+        <td></td>
+        <td>$39.27=</td>
         <td></td>
         <td></td>
-        <td>$2.16</td>
         <td></td>
-        <td>$1.51</td>
-        <td></td>
-        <td>$25.23</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>$145.44</td>
         <td></td>
         <td></td>
         <td></td>
@@ -454,7 +497,8 @@
         <td>2018</td>
         <td>438274</td>
         <td></td>
-        <td>$115.00</td>
+        <td>$179.00</td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -468,29 +512,29 @@
         <td></td>
         <td></td>
         <td><img class="status" src="img/status--delivered.png" alt=""></td>
+        <td>$9.56+</td>
         <td></td>
+        <td>$0.67+</td>
         <td></td>
-        <td>$2.16</td>
+        <td>$0.96+</td>
         <td></td>
-        <td>$1.51</td>
-        <td></td>
-        <td>$25.23</td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>$11.19=</td>
         <td></td>
         <td></td>
         <td></td>
+        <td>$41.44</td>
         <td></td>
         <td></td>
         <td></td>
-        <td>Eames Arm Chair</td>
-        <td>Boulevard</td>
-        <td>Gray</td>
+        <td></td>
+        <td></td>
+        <td>Ottoman</td>
+        <td>Teller</td>
+        <td>Blue</td>
         <td>2018</td>
-        <td>438274</td>
+        <td>759233</td>
         <td></td>
-        <td>$115.00</td>
+        <td>$51.00</td>
         <td></td>
         <td></td>
         <td></td>
@@ -505,10 +549,10 @@
       <tr class="clickable" data-toggle="collapse" data-target="#group-of-rows-5" aria-controls="group-of-rows-5">
         <th scope="row"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;5</th>
         <td>20180629 - 01:15:30</td>
-        <td>Payment Due (2)</td>
+        <td>Payment Due (2 of 12)</td>
         <td><img class="status" src="img/status--active2.png" alt=""></td>
         <td></td>
-        <td></td>
+        <td>$43.12+</td>
         <td>0.10</td>
         <td>$4.31</td>
         <td>0.07</td>
@@ -516,8 +560,9 @@
         <td></td>
         <td class="amount"><strong>$50.46</strong></td>
         <td></td>
+        <td>$50.46</td>
         <td>$467.04</td>
-        <td>$179.54</td>
+        <td>$143.76</td>
         <td></td>
         <td></td>
         <td></td>
@@ -534,7 +579,7 @@
         <td>$517.50</td>
         <td>FL</td>
         <td>ISPM</td>
-        <td>543-532-654</td>
+        <td></td>
         <td></td>
       </tr>
     </tbody>
@@ -545,17 +590,17 @@
         <td></td>
         <td></td>
         <td><img class="status" src="img/status--delivered.png" alt=""></td>
+        <td>$33.56+</td>
+        <td></td>
+        <td>$3.36+</td>
+        <td></td>
+        <td>$2.35+</td>
+        <td></td>
+        <td>$39.27=</td>
         <td></td>
         <td></td>
-        <td>$2.16</td>
         <td></td>
-        <td>$1.51</td>
-        <td></td>
-        <td>$25.23</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>$111.88</td>
         <td></td>
         <td></td>
         <td></td>
@@ -567,7 +612,8 @@
         <td>2018</td>
         <td>438274</td>
         <td></td>
-        <td>$115.00</td>
+        <td>$179.00</td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -581,29 +627,29 @@
         <td></td>
         <td></td>
         <td><img class="status" src="img/status--delivered.png" alt=""></td>
+        <td>$9.56+</td>
         <td></td>
+        <td>$0.67+</td>
         <td></td>
-        <td>$2.16</td>
+        <td>$0.96+</td>
         <td></td>
-        <td>$1.51</td>
-        <td></td>
-        <td>$25.23</td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>$11.19=</td>
         <td></td>
         <td></td>
         <td></td>
+        <td>$31.88</td>
         <td></td>
         <td></td>
         <td></td>
-        <td>Eames Arm Chair</td>
-        <td>Boulevard</td>
-        <td>Gray</td>
+        <td></td>
+        <td></td>
+        <td>Ottoman</td>
+        <td>Teller</td>
+        <td>Blue</td>
         <td>2018</td>
-        <td>438274</td>
+        <td>759233</td>
         <td></td>
-        <td>$115.00</td>
+        <td>$51.00</td>
         <td></td>
         <td></td>
         <td></td>
@@ -618,19 +664,36 @@
       <tr class="clickable" data-toggle="collapse" data-target="#group-of-rows-6" aria-controls="group-of-rows-6">
         <th scope="row"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;6</th>
         <td>20180629 - 01:15:30</td>
-        <td>Payment/Autopay (2)</td>
+        <td>Payment/Auto (2 of 12)</td>
         <td><img class="status" src="img/status--active2.png" alt=""></td>
         <td></td>
-        <td></td>
+        <td>$43.12+</td>
         <td>0.10</td>
         <td>$4.31</td>
         <td>0.07</td>
         <td>$3.02</td>
         <td></td>
         <td class="amount-negative"><strong>-$50.46</strong></td>
-        <td>APP *7354</td>
+        <td class="approval_details" data-toggle="modal" data-target="#exampleModal">*7354</td>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Processor Details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                {'gateway': 3, 'tax_amount': 0.0, 'response': {'AcsUrl': None, 'AuthAmount': 0.0, 'AuthCode': '033906', 'AvsResult': 'Address: Match & 5 Digit Zip: Match', 'AvsResultCode': 'Y', 'BatchNum': 67, 'BatchRefNum': 59370142, 'CardCodeResult': 'No CVV2/CVC data available for transaction.', 'CardCodeResultCode': None, 'CardLevelResult': None, 'CardLevelResultCode': None, 'ConversionRate': 0.0, 'ConvertedAmount': 0.0, 'ConvertedAmountCurrency': '0', 'CustNum': 76192681, 'Error': 'Approved', 'ErrorCode': 0, 'isDuplicate': False, 'Payload': None, 'ProfilerScore': None, 'ProfilerResponse': None, 'ProfilerReason': None, 'RefNum': 2089238478, 'RemainingBalance': None, 'Result': 'Approved', 'ResultCode': 'A', 'Status': 'Pending', 'StatusCode': 'P', 'VpasResultCode': None}, 'payment_method': None, 'payment_method_id': None, 'amount': '1064.46', 'operation': 'cc:sale', 'customer': 'Customer 27', 'customer_id': 27}
+              </div>
+            </div>
+          </div>
+        </div>
+        <td>$0.00</td>
         <td>$416.58</td>
-        <td>$128.08</td>
+        <td>$100.64</td>
         <td></td>
         <td></td>
         <td></td>
@@ -647,7 +710,7 @@
         <td>$517.50</td>
         <td>FL</td>
         <td>ISPM</td>
-        <td>543-532-654</td>
+        <td></td>
         <td></td>
       </tr>
     </tbody>
@@ -658,17 +721,17 @@
         <td></td>
         <td></td>
         <td><img class="status" src="img/status--delivered.png" alt=""></td>
+        <td>$33.56+</td>
+        <td></td>
+        <td>$3.36+</td>
+        <td></td>
+        <td>$2.35+</td>
+        <td></td>
+        <td>$39.27=</td>
         <td></td>
         <td></td>
-        <td>$2.16</td>
         <td></td>
-        <td>$1.51</td>
-        <td></td>
-        <td>$25.23</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>$78.32</td>
         <td></td>
         <td></td>
         <td></td>
@@ -680,7 +743,8 @@
         <td>2018</td>
         <td>438274</td>
         <td></td>
-        <td>$115.00</td>
+        <td>$179.00</td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -694,29 +758,29 @@
         <td></td>
         <td></td>
         <td><img class="status" src="img/status--delivered.png" alt=""></td>
+        <td>$9.56+</td>
         <td></td>
+        <td>$0.67+</td>
         <td></td>
-        <td>$2.16</td>
+        <td>$0.96+</td>
         <td></td>
-        <td>$1.51</td>
-        <td></td>
-        <td>$25.23</td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>$11.19=</td>
         <td></td>
         <td></td>
         <td></td>
+        <td>$22.32</td>
         <td></td>
         <td></td>
         <td></td>
-        <td>Eames Arm Chair</td>
-        <td>Boulevard</td>
-        <td>Gray</td>
+        <td></td>
+        <td></td>
+        <td>Ottoman</td>
+        <td>Teller</td>
+        <td>Blue</td>
         <td>2018</td>
-        <td>438274</td>
+        <td>759233</td>
         <td></td>
-        <td>$115.00</td>
+        <td>$51.00</td>
         <td></td>
         <td></td>
         <td></td>
@@ -732,10 +796,10 @@
       <tr class="clickable" data-toggle="collapse" data-target="#group-of-rows-7" aria-controls="group-of-rows-7">
         <th scope="row"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;7</th>
         <td>20180629 - 01:15:30</td>
-        <td>Payment Due (3)</td>
+        <td>Payment Due (3 of 12)</td>
         <td><img class="status" src="img/status--active2.png" alt=""></td>
         <td></td>
-        <td></td>
+        <td>$43.12+</td>
         <td>0.10</td>
         <td>$4.31</td>
         <td>0.07</td>
@@ -743,8 +807,9 @@
         <td></td>
         <td class="amount"><strong>$50.46</strong></td>
         <td></td>
+        <td>$50.46</td>
         <td>$416.58</td>
-        <td>$128.08</td>
+        <td>$57.52</td>
         <td></td>
         <td></td>
         <td></td>
@@ -761,7 +826,7 @@
         <td>$517.50</td>
         <td>FL</td>
         <td>ISPM</td>
-        <td>543-532-654</td>
+        <td></td>
         <td></td>
       </tr>
     </tbody>
@@ -772,17 +837,17 @@
         <td></td>
         <td></td>
         <td><img class="status" src="img/status--delivered.png" alt=""></td>
+        <td>$33.56+</td>
+        <td></td>
+        <td>$3.36+</td>
+        <td></td>
+        <td>$2.35+</td>
+        <td></td>
+        <td>$39.27=</td>
         <td></td>
         <td></td>
         <td></td>
-        <td>$2.16</td>
-        <td></td>
-        <td>$1.51</td>
-        <td></td>
-        <td>$25.23</td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>$44.76</td>
         <td></td>
         <td></td>
         <td></td>
@@ -794,7 +859,9 @@
         <td>2018</td>
         <td>438274</td>
         <td></td>
-        <td>$115.00</td>
+        <td>$179.00</td>
+        <td></td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -802,34 +869,35 @@
         <td></td>
       </tr>
       <tr id="lease-items">
-        <td>1</td>
+        <td>2</td>
         <td></td>
         <td></td>
         <td></td>
         <td><img class="status" src="img/status--delivered.png" alt=""></td>
+        <td>$9.56+</td>
+        <td></td>
+        <td>$0.67+</td>
+        <td></td>
+        <td>$0.96+</td>
+        <td></td>
+        <td>$11.19=</td>
         <td></td>
         <td></td>
         <td></td>
-        <td>$2.16</td>
-        <td></td>
-        <td>$1.51</td>
-        <td></td>
-        <td>$25.23</td>
+        <td>$12.76</td>
         <td></td>
         <td></td>
         <td></td>
         <td></td>
         <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>Eames Arm Chair</td>
-        <td>Boulevard</td>
-        <td>Gray</td>
+        <td>Ottoman</td>
+        <td>Teller</td>
+        <td>Blue</td>
         <td>2018</td>
-        <td>438274</td>
+        <td>759233</td>
         <td></td>
-        <td>$115.00</td>
+        <td>$51.00</td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -843,19 +911,36 @@
       <tr class="clickable" data-toggle="collapse" data-target="#group-of-rows-8" aria-controls="group-of-rows-8">
         <th scope="row"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;8</th>
         <td>20180629 - 01:15:30</td>
-        <td>Payment/Autopay (3)</td>
+        <td>Payment/Auto (3 of 12)</td>
         <td><img class="status" src="img/status--active2.png" alt=""></td>
         <td></td>
-        <td></td>
+        <td>$43.12+</td>
         <td>0.10</td>
         <td>$4.31</td>
         <td>0.07</td>
         <td>$3.02</td>
         <td></td>
         <td class="amount-negative"><strong>-$50.46</strong></td>
-        <td>APP *7354</td>
+        <td class="approval_details" data-toggle="modal" data-target="#exampleModal">*7354</td>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Processor Details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                {'gateway': 3, 'tax_amount': 0.0, 'response': {'AcsUrl': None, 'AuthAmount': 0.0, 'AuthCode': '033906', 'AvsResult': 'Address: Match & 5 Digit Zip: Match', 'AvsResultCode': 'Y', 'BatchNum': 67, 'BatchRefNum': 59370142, 'CardCodeResult': 'No CVV2/CVC data available for transaction.', 'CardCodeResultCode': None, 'CardLevelResult': None, 'CardLevelResultCode': None, 'ConversionRate': 0.0, 'ConvertedAmount': 0.0, 'ConvertedAmountCurrency': '0', 'CustNum': 76192681, 'Error': 'Approved', 'ErrorCode': 0, 'isDuplicate': False, 'Payload': None, 'ProfilerScore': None, 'ProfilerResponse': None, 'ProfilerReason': None, 'RefNum': 2089238478, 'RemainingBalance': None, 'Result': 'Approved', 'ResultCode': 'A', 'Status': 'Pending', 'StatusCode': 'P', 'VpasResultCode': None}, 'payment_method': None, 'payment_method_id': None, 'amount': '1064.46', 'operation': 'cc:sale', 'customer': 'Customer 27', 'customer_id': 27}
+              </div>
+            </div>
+          </div>
+        </div>
+        <td>$0.00</td>
         <td>$366.12</td>
-        <td>$77.62</td>
+        <td>$14.40</td>
         <td></td>
         <td></td>
         <td></td>
@@ -872,7 +957,7 @@
         <td>$517.50</td>
         <td>FL</td>
         <td>ISPM</td>
-        <td>543-532-654</td>
+        <td></td>
         <td></td>
       </tr>
     </tbody>
@@ -883,17 +968,17 @@
         <td></td>
         <td></td>
         <td><img class="status" src="img/status--delivered.png" alt=""></td>
+        <td>$33.56+</td>
+        <td></td>
+        <td>$3.36+</td>
+        <td></td>
+        <td>$2.35+</td>
+        <td></td>
+        <td>$39.27=</td>
         <td></td>
         <td></td>
-        <td>$2.16</td>
         <td></td>
-        <td>$1.51</td>
-        <td></td>
-        <td>$25.23</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>$11.20</td>
         <td></td>
         <td></td>
         <td></td>
@@ -905,7 +990,8 @@
         <td>2018</td>
         <td>438274</td>
         <td></td>
-        <td>$115.00</td>
+        <td>$179.00</td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -919,29 +1005,29 @@
         <td></td>
         <td></td>
         <td><img class="status" src="img/status--delivered.png" alt=""></td>
+        <td>$9.56+</td>
         <td></td>
+        <td>$0.67+</td>
         <td></td>
-        <td>$2.16</td>
+        <td>$0.96+</td>
         <td></td>
-        <td>$1.51</td>
-        <td></td>
-        <td>$25.23</td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>$11.19=</td>
         <td></td>
         <td></td>
         <td></td>
+        <td>$3.20</td>
         <td></td>
         <td></td>
         <td></td>
-        <td>Eames Arm Chair</td>
-        <td>Boulevard</td>
-        <td>Gray</td>
+        <td></td>
+        <td></td>
+        <td>Ottoman</td>
+        <td>Teller</td>
+        <td>Blue</td>
         <td>2018</td>
-        <td>438274</td>
+        <td>759233</td>
         <td></td>
-        <td>$115.00</td>
+        <td>$51.00</td>
         <td></td>
         <td></td>
         <td></td>
@@ -950,16 +1036,15 @@
         <td></td>
       </tr>
     </tbody>
-
     <!-- LINE ITEM 9 -->
     <tbody>
       <tr class="clickable" data-toggle="collapse" data-target="#group-of-rows-9" aria-controls="group-of-rows-9">
         <th scope="row"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;9</th>
         <td>20180629 - 01:15:30</td>
-        <td>Payment Due (4)</td>
+        <td>Payment Due (4 of 12)</td>
         <td><img class="status" src="img/status--active2.png" alt=""></td>
         <td></td>
-        <td></td>
+        <td>$43.12+</td>
         <td>0.10</td>
         <td>$4.31</td>
         <td>0.07</td>
@@ -967,9 +1052,35 @@
         <td></td>
         <td class="amount"><strong>$50.46</strong></td>
         <td></td>
+        <td>$50.46</td>
         <td>$366.12</td>
         <td></td>
-        <td>$227.07</td>
+        <td class="epo_details" data-toggle="modal" data-target="#exampleModal1">$227.07</td>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel1">EPO Details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <!-- ENTER DETAILS HERE -->
+                Formula: {cash_price} * ({payments_remaining})/({total_payments}) + {fees}<br>
+                Formula: Cash Price * Payments Remaining / Total Payments + Fees<br>
+                <br>
+                Cash Price: $230.00<br>
+                Payments Remaning: 9<br>
+                Total Payments: 12<br>
+                Fees: $0.00<br>
+                <br>
+                <strong>Total: $227.07</strong>
+              </div>
+            </div>
+          </div>
+        </div>
         <td></td>
         <td></td>
         <td></td>
@@ -985,7 +1096,7 @@
         <td>$517.50</td>
         <td>FL</td>
         <td>ISPM</td>
-        <td>543-532-654</td>
+        <td></td>
         <td></td>
       </tr>
     </tbody>
@@ -996,17 +1107,17 @@
         <td></td>
         <td></td>
         <td><img class="status" src="img/status--delivered.png" alt=""></td>
+        <td>$33.56+</td>
+        <td></td>
+        <td>$3.36+</td>
+        <td></td>
+        <td>$2.35+</td>
+        <td></td>
+        <td>$39.27=</td>
         <td></td>
         <td></td>
-        <td>$2.16</td>
         <td></td>
-        <td>$1.51</td>
-        <td></td>
-        <td>$25.23</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>$179.00</td>
         <td></td>
         <td></td>
         <td></td>
@@ -1018,7 +1129,8 @@
         <td>2018</td>
         <td>438274</td>
         <td></td>
-        <td>$115.00</td>
+        <td>$179.00</td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -1032,29 +1144,29 @@
         <td></td>
         <td></td>
         <td><img class="status" src="img/status--delivered.png" alt=""></td>
+        <td>$9.56+</td>
         <td></td>
+        <td>$0.67+</td>
         <td></td>
-        <td>$2.16</td>
+        <td>$0.96+</td>
         <td></td>
-        <td>$1.51</td>
-        <td></td>
-        <td>$25.23</td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>$11.19=</td>
         <td></td>
         <td></td>
         <td></td>
+        <td>$51.00</td>
         <td></td>
         <td></td>
         <td></td>
-        <td>Eames Arm Chair</td>
-        <td>Boulevard</td>
-        <td>Gray</td>
+        <td></td>
+        <td></td>
+        <td>Ottoman</td>
+        <td>Teller</td>
+        <td>Blue</td>
         <td>2018</td>
-        <td>438274</td>
+        <td>759233</td>
         <td></td>
-        <td>$115.00</td>
+        <td>$51.00</td>
         <td></td>
         <td></td>
         <td></td>
@@ -1069,20 +1181,62 @@
       <tr class="clickable" data-toggle="collapse" data-target="#group-of-rows-10" aria-controls="group-of-rows-10">
         <th scope="row"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;10</th>
         <td>20180629 - 01:15:30</td>
-        <td>Payment/Autopay (4)</td>
+        <td>Payment/Auto (4 of 12)</td>
         <td><img class="status" src="img/status--active2.png" alt=""></td>
         <td></td>
-        <td></td>
+        <td>$43.12+</td>
         <td>0.10</td>
         <td>$4.31</td>
         <td>0.07</td>
         <td>$3.02</td>
         <td></td>
         <td class="amount-negative"><strong>-$50.46</strong></td>
-        <td>APP *7354</td>
+        <td class="approval_details" data-toggle="modal" data-target="#exampleModal">*7354</td>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Processor Details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                {'gateway': 3, 'tax_amount': 0.0, 'response': {'AcsUrl': None, 'AuthAmount': 0.0, 'AuthCode': '033906', 'AvsResult': 'Address: Match & 5 Digit Zip: Match', 'AvsResultCode': 'Y', 'BatchNum': 67, 'BatchRefNum': 59370142, 'CardCodeResult': 'No CVV2/CVC data available for transaction.', 'CardCodeResultCode': None, 'CardLevelResult': None, 'CardLevelResultCode': None, 'ConversionRate': 0.0, 'ConvertedAmount': 0.0, 'ConvertedAmountCurrency': '0', 'CustNum': 76192681, 'Error': 'Approved', 'ErrorCode': 0, 'isDuplicate': False, 'Payload': None, 'ProfilerScore': None, 'ProfilerResponse': None, 'ProfilerReason': None, 'RefNum': 2089238478, 'RemainingBalance': None, 'Result': 'Approved', 'ResultCode': 'A', 'Status': 'Pending', 'StatusCode': 'P', 'VpasResultCode': None}, 'payment_method': None, 'payment_method_id': None, 'amount': '1064.46', 'operation': 'cc:sale', 'customer': 'Customer 27', 'customer_id': 27}
+              </div>
+            </div>
+          </div>
+        </div>
+        <td>$0.00</td>
         <td>$315.66</td>
         <td></td>
-        <td>$201.84</td>
+        <td class="epo_details" data-toggle="modal" data-target="#exampleModal1">$201.84</td>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel1">EPO Details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <!-- ENTER DETAILS HERE -->
+                Formula: {cash_price} * ({payments_remaining})/({total_payments}) + {fees}<br>
+                Formula: Cash Price * Payments Remaining / Total Payments + Fees<br>
+                <br>
+                Cash Price: $230.00<br>
+                Payments Remaning: 8<br>
+                Total Payments: 12<br>
+                Fees: $0.00<br>
+                <br>
+                <strong>Total: $201.84</strong>
+              </div>
+            </div>
+          </div>
+        </div>
         <td></td>
         <td></td>
         <td>$241.84</td>
@@ -1098,7 +1252,7 @@
         <td>$517.50</td>
         <td>FL</td>
         <td>ISPM</td>
-        <td>543-532-654</td>
+        <td></td>
         <td></td>
       </tr>
     </tbody>
@@ -1109,17 +1263,17 @@
         <td></td>
         <td></td>
         <td><img class="status" src="img/status--delivered.png" alt=""></td>
+        <td>$33.56+</td>
+        <td></td>
+        <td>$3.36+</td>
+        <td></td>
+        <td>$2.35+</td>
+        <td></td>
+        <td>$39.27=</td>
         <td></td>
         <td></td>
-        <td>$2.16</td>
         <td></td>
-        <td>$1.51</td>
-        <td></td>
-        <td>$25.23</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>$179.00</td>
         <td></td>
         <td></td>
         <td></td>
@@ -1131,7 +1285,8 @@
         <td>2018</td>
         <td>438274</td>
         <td></td>
-        <td>$115.00</td>
+        <td>$179.00</td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -1145,29 +1300,29 @@
         <td></td>
         <td></td>
         <td><img class="status" src="img/status--delivered.png" alt=""></td>
+        <td>$9.56+</td>
         <td></td>
+        <td>$0.67+</td>
         <td></td>
-        <td>$2.16</td>
+        <td>$0.96+</td>
         <td></td>
-        <td>$1.51</td>
-        <td></td>
-        <td>$25.23</td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>$11.19=</td>
         <td></td>
         <td></td>
         <td></td>
+        <td>$51.00</td>
         <td></td>
         <td></td>
         <td></td>
-        <td>Eames Arm Chair</td>
-        <td>Boulevard</td>
-        <td>Gray</td>
+        <td></td>
+        <td></td>
+        <td>Ottoman</td>
+        <td>Teller</td>
+        <td>Blue</td>
         <td>2018</td>
-        <td>438274</td>
+        <td>759233</td>
         <td></td>
-        <td>$115.00</td>
+        <td>$51.00</td>
         <td></td>
         <td></td>
         <td></td>
@@ -1182,10 +1337,10 @@
       <tr class="clickable" data-toggle="collapse" data-target="#group-of-rows-11" aria-controls="group-of-rows-11">
         <th scope="row"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;11</th>
         <td>20180629 - 01:15:30</td>
-        <td>Payment Due (5)</td>
+        <td>Payment Due (5 of 12)</td>
         <td><img class="status" src="img/status--active2.png" alt=""></td>
         <td></td>
-        <td></td>
+        <td>$43.12+</td>
         <td>0.10</td>
         <td>$4.31</td>
         <td>0.07</td>
@@ -1193,9 +1348,35 @@
         <td></td>
         <td class="amount"><strong>$50.46</strong></td>
         <td></td>
+        <td>$50.46</td>
         <td>$315.66</td>
         <td></td>
-        <td>$201.84</td>
+        <td class="epo_details" data-toggle="modal" data-target="#exampleModal1">$201.84</td>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel1">EPO Details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <!-- ENTER DETAILS HERE -->
+                Formula: {cash_price} * ({payments_remaining})/({total_payments}) + {fees}<br>
+                Formula: Cash Price * Payments Remaining / Total Payments + Fees<br>
+                <br>
+                Cash Price: $230.00<br>
+                Payments Remaning: 8<br>
+                Total Payments: 12<br>
+                Fees: $0.00<br>
+                <br>
+                <strong>Total: $201.84</strong>
+              </div>
+            </div>
+          </div>
+        </div>
         <td></td>
         <td></td>
         <td></td>
@@ -1211,7 +1392,7 @@
         <td>$517.50</td>
         <td>FL</td>
         <td>ISPM</td>
-        <td>543-532-654</td>
+        <td></td>
         <td></td>
       </tr>
     </tbody>
@@ -1222,17 +1403,17 @@
         <td></td>
         <td></td>
         <td><img class="status" src="img/status--delivered.png" alt=""></td>
+        <td>$33.56+</td>
+        <td></td>
+        <td>$3.36+</td>
+        <td></td>
+        <td>$2.35+</td>
+        <td></td>
+        <td>$39.27=</td>
         <td></td>
         <td></td>
-        <td>$2.16</td>
         <td></td>
-        <td>$1.51</td>
-        <td></td>
-        <td>$25.23</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>$179.00</td>
         <td></td>
         <td></td>
         <td></td>
@@ -1244,7 +1425,8 @@
         <td>2018</td>
         <td>438274</td>
         <td></td>
-        <td>$115.00</td>
+        <td>$179.00</td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -1258,29 +1440,29 @@
         <td></td>
         <td></td>
         <td><img class="status" src="img/status--delivered.png" alt=""></td>
+        <td>$9.56+</td>
         <td></td>
+        <td>$0.67+</td>
         <td></td>
-        <td>$2.16</td>
+        <td>$0.96+</td>
         <td></td>
-        <td>$1.51</td>
-        <td></td>
-        <td>$25.23</td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>$11.19=</td>
         <td></td>
         <td></td>
         <td></td>
+        <td>$51.00</td>
         <td></td>
         <td></td>
         <td></td>
-        <td>Eames Arm Chair</td>
-        <td>Boulevard</td>
-        <td>Gray</td>
+        <td></td>
+        <td></td>
+        <td>Ottoman</td>
+        <td>Teller</td>
+        <td>Blue</td>
         <td>2018</td>
-        <td>438274</td>
+        <td>759233</td>
         <td></td>
-        <td>$115.00</td>
+        <td>$51.00</td>
         <td></td>
         <td></td>
         <td></td>
@@ -1295,23 +1477,65 @@
       <tr class="clickable" data-toggle="collapse" data-target="#group-of-rows-12" aria-controls="group-of-rows-12">
         <th scope="row"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;12</th>
         <td>20180629 - 01:15:30</td>
-        <td>Payment/Autopay (5)</td>
+        <td>Payment/Auto (5 of 12)</td>
         <td><img class="status" src="img/status--active2.png" alt=""></td>
         <td></td>
-        <td></td>
+        <td>$43.12+</td>
         <td>0.10</td>
         <td>$4.31</td>
         <td>0.07</td>
         <td>$3.02</td>
         <td></td>
-        <td class="amount-negative"><strong>-$50.46</strong></td>
-        <td>APP *7354</td>
-        <td>$265.50</td>
+        <td class="declined"><strong>-$50.46</strong></td>
+        <td class="declined" data-toggle="modal" data-target="#exampleModal"><strong>DECLINED</strong></td>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Processor Details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                {'gateway': 3, 'tax_amount': 0.0, 'response': {'AcsUrl': None, 'AuthAmount': 0.0, 'AuthCode': '033906', 'AvsResult': 'Address: Match & 5 Digit Zip: Match', 'AvsResultCode': 'Y', 'BatchNum': 67, 'BatchRefNum': 59370142, 'CardCodeResult': 'No CVV2/CVC data available for transaction.', 'CardCodeResultCode': None, 'CardLevelResult': None, 'CardLevelResultCode': None, 'ConversionRate': 0.0, 'ConvertedAmount': 0.0, 'ConvertedAmountCurrency': '0', 'CustNum': 76192681, 'Error': 'Approved', 'ErrorCode': 0, 'isDuplicate': False, 'Payload': None, 'ProfilerScore': None, 'ProfilerResponse': None, 'ProfilerReason': None, 'RefNum': 2089238478, 'RemainingBalance': None, 'Result': 'Approved', 'ResultCode': 'A', 'Status': 'Pending', 'StatusCode': 'P', 'VpasResultCode': None}, 'payment_method': None, 'payment_method_id': None, 'amount': '1064.46', 'operation': 'cc:sale', 'customer': 'Customer 27', 'customer_id': 27}
+              </div>
+            </div>
+          </div>
+        </div>
+        <td>$50.46</td>
+        <td>$315.66</td>
         <td></td>
-        <td>$176.61</td>
+        <td class="epo_details" data-toggle="modal" data-target="#exampleModal1">$201.84</td>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel1">EPO Details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <!-- ENTER DETAILS HERE -->
+                Formula: {cash_price} * ({payments_remaining})/({total_payments}) + {fees}<br>
+                Formula: Cash Price * Payments Remaining / Total Payments + Fees<br>
+                <br>
+                Cash Price: $230.00<br>
+                Payments Remaning: 8<br>
+                Total Payments: 12<br>
+                Fees: $0.00<br>
+                <br>
+                <strong>Total: $201.84</strong>
+              </div>
+            </div>
+          </div>
+        </div>
         <td></td>
         <td></td>
-        <td>$292.30</td>
+        <td>$241.84</td>
         <td>2</td>
         <td></td>
         <td></td>
@@ -1324,7 +1548,7 @@
         <td>$517.50</td>
         <td>FL</td>
         <td>ISPM</td>
-        <td>543-532-654</td>
+        <td></td>
         <td></td>
       </tr>
     </tbody>
@@ -1335,17 +1559,17 @@
         <td></td>
         <td></td>
         <td><img class="status" src="img/status--delivered.png" alt=""></td>
+        <td>$33.56+</td>
+        <td></td>
+        <td>$3.36+</td>
+        <td></td>
+        <td>$2.35+</td>
+        <td></td>
+        <td>$39.27=</td>
         <td></td>
         <td></td>
-        <td>$2.16</td>
         <td></td>
-        <td>$1.51</td>
-        <td></td>
-        <td>$25.23</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>$179.00</td>
         <td></td>
         <td></td>
         <td></td>
@@ -1357,7 +1581,8 @@
         <td>2018</td>
         <td>438274</td>
         <td></td>
-        <td>$115.00</td>
+        <td>$179.00</td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -1371,17 +1596,120 @@
         <td></td>
         <td></td>
         <td><img class="status" src="img/status--delivered.png" alt=""></td>
+        <td>$9.56+</td>
+        <td></td>
+        <td>$0.67+</td>
+        <td></td>
+        <td>$0.96+</td>
+        <td></td>
+        <td>$11.19=</td>
         <td></td>
         <td></td>
-        <td>$2.16</td>
         <td></td>
-        <td>$1.51</td>
-        <td></td>
-        <td>$25.23</td>
+        <td>$51.00</td>
         <td></td>
         <td></td>
         <td></td>
         <td></td>
+        <td></td>
+        <td>Ottoman</td>
+        <td>Teller</td>
+        <td>Blue</td>
+        <td>2018</td>
+        <td>759233</td>
+        <td></td>
+        <td>$51.00</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+
+    <!-- LINE ITEM 13 -->
+    <tbody>
+      <tr class="clickable" data-toggle="collapse" data-target="#group-of-rows-13" aria-controls="group-of-rows-13">
+        <th scope="row"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;13</th>
+        <td>20180629 - 01:15:30</td>
+        <td>Payment Due (5 of 12)</td>
+        <td><img class="status" src="img/status--pastdue.png" alt="">(4d)</td>
+        <td></td>
+        <td>$43.12+</td>
+        <td>0.10</td>
+        <td>$4.31</td>
+        <td>0.07</td>
+        <td>$3.02</td>
+        <td></td>
+        <td class="amount"><strong>$50.46</strong></td>
+        <td class="amount-negative"></td>
+        <td>$50.46</td>
+        <td>$315.66</td>
+        <td></td>
+        <td class="epo_details" data-toggle="modal" data-target="#exampleModal1">$201.84</td>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel1">EPO Details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <!-- ENTER DETAILS HERE -->
+                Formula: {cash_price} * ({payments_remaining})/({total_payments}) + {fees}<br>
+                Formula: Cash Price * Payments Remaining / Total Payments + Fees<br>
+                <br>
+                Cash Price: $230.00<br>
+                Payments Remaning: 8<br>
+                Total Payments: 12<br>
+                Fees: $0.00<br>
+                <br>
+                <strong>Total: $201.84</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+        <td></td>
+        <td></td>
+        <td>$241.84</td>
+        <td>2</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>$230.00</td>
+        <td>2.25</td>
+        <td>$517.50</td>
+        <td>FL</td>
+        <td>ISPM</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+    <tbody id="group-of-rows-13" class="collapse">
+      <tr id="lease-items">
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><img class="status" src="img/status--delivered.png" alt=""></td>
+        <td>$33.56+</td>
+        <td></td>
+        <td>$3.36+</td>
+        <td></td>
+        <td>$2.35+</td>
+        <td></td>
+        <td>$39.27=</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>$179.00</td>
         <td></td>
         <td></td>
         <td></td>
@@ -1393,7 +1721,44 @@
         <td>2018</td>
         <td>438274</td>
         <td></td>
-        <td>$115.00</td>
+        <td>$179.00</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="lease-items">
+        <td>2</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><img class="status" src="img/status--delivered.png" alt=""></td>
+        <td>$9.56+</td>
+        <td></td>
+        <td>$0.67+</td>
+        <td></td>
+        <td>$0.96+</td>
+        <td></td>
+        <td>$11.19=</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>$51.00</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Ottoman</td>
+        <td>Teller</td>
+        <td>Blue</td>
+        <td>2018</td>
+        <td>759233</td>
+        <td></td>
+        <td>$51.00</td>
         <td></td>
         <td></td>
         <td></td>
@@ -1404,11 +1769,79 @@
     </tbody>
 
 
+    <!-- LINE ITEM 14 -->
+    <tbody>
+      <tr class="clickable" data-toggle="collapse" data-target="#group-of-rows-14" aria-controls="group-of-rows-14">
+        <th scope="row"><i  aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;14</th>
+        <td>20180629 - 01:15:30</td>
+        <td>Late Fee</td>
+        <td><img class="status" src="img/status--pastdue.png" alt="">(4d)</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>$10.00</td>
+        <td class="amount"><strong>$10.00</strong></td>
+        <td></td>
+        <td><strong>$60.46</strong></td>
+        <td>$325.66</td>
+        <td></td>
+        <td class="epo_details" data-toggle="modal" data-target="#exampleModal1">$211.84</td>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel1">EPO Details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <!-- ENTER DETAILS HERE -->
+                Formula: {cash_price} * ({payments_remaining})/({total_payments}) + {fees}<br>
+                Formula: Cash Price * Payments Remaining / Total Payments + Fees<br>
+                <br>
+                Cash Price: $230.00<br>
+                Payments Remaning: 8<br>
+                Total Payments: 12<br>
+                Fees: $10.00<br>
+                <br>
+                <strong>Total: $211.84</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+        <td></td>
+        <td></td>
+        <td>$241.84</td>
+        <td>2</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>$230.00</td>
+        <td>2.25</td>
+        <td>$517.50</td>
+        <td>FL</td>
+        <td>ISPM</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+
+
+
 
   </table>
-
+  <div class="version">LMS Journal v1.0.0</div>
   <!-- Optional JavaScript -->
   <script src="toggle-table-row.js"></script>
+  <script src="tooltip.js"></script>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

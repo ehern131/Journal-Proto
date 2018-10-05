@@ -22,14 +22,28 @@ th, td {
 
 /* CLASSES  */
 .amount-negative {
-  color: red;
+  color: rgb(36, 172, 103);
 }
 .amount {
-  color:green;
+  color:;
 }
 .group-of-rows {
   margin-left: 100px;
 }
 .status {
   width: 80px;
+}
+
+.declined {
+  color: rgb(228, 21, 21);
+}
+
+.approval_details, .epo_details {
+  color:rgb(68, 140, 208);
+}
+
+.version {
+  text-align: right;
+  margin-top: 50px;
+  margin-right: 30px;
 }
